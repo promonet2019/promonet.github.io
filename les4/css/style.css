@@ -1,0 +1,63 @@
+.flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid red;
+    margin: 50px auto;
+}
+
+.flexBox-item {
+    margin: 10px;
+    background: grey;
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+}
+
+.positionBox {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid blue;
+    margin: 0 auto;
+}
+
+.positionBox-item {
+    color: magenta;
+    margin: 10px;
+    background: grey;
+    width: 100px;
+    height: 100px;
+    border: 2px solid magenta;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.posRelative {
+    position: relative;
+    background: #e3ff36;
+    top: 50px;
+    left: 150px;
+    z-index: 1;
+}
+
+.posFixed {
+    position: fixed;
+    background: #ff2632;
+    top: 50px;
+    right: 50px;
+}
+
+.posAbsolute {
+    position: absolute;
+    background: #7eff68;
+    top: 100px;
+    left: 100px;
+}
+
+
+
+
