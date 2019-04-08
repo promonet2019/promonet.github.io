@@ -1,63 +1,99 @@
-.flexBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    height: 500px;
-    border: 2px solid red;
-    margin: 50px auto;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 14px;
+    list-style-type: none;
+}
+/* Сброс настроек страницы по умолчанию */
+body {
+    background-color: #eee;
+    color: #4e4544;
+    font: 16px sans-serif;
+}
+    header{
+
+        display: flex;
+        justify-content:space-between;
+        color: #000000;
+        height: auto;
+    }
+.p {
+    font: bold 100% sans-serif;
 }
 
-.flexBox-item {
-    margin: 10px;
-    background: grey;
-    width: 100px;
-    height: 100px;
-    border: 2px solid green;
+.text-li{
 }
+.karta1{
 
-.positionBox {
-    position: relative;
-    width: 1000px;
-    height: 500px;
-    border: 2px solid blue;
-    margin: 0 auto;
 }
-
-.positionBox-item {
-    color: magenta;
-    margin: 10px;
-    background: grey;
-    width: 100px;
-    height: 100px;
-    border: 2px solid magenta;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+.karta2{
+    align-self: flex-center;
 }
+.zag-h2  {
 
-.posRelative {
-    position: relative;
-    background: #e3ff36;
-    top: 50px;
-    left: 150px;
-    z-index: 1;
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 2px solid #000000;
+    list-style-type: none;
+    color: #000000;
 }
-
-.posFixed {
-    position: fixed;
-    background: #ff2632;
-    top: 50px;
-    right: 50px;
+.zag-h1 {
+    font-size: 70px;
+    font-weight: normal;
+    border-bottom: 2px solid #000000;
+    list-style-type: none;
+    color: #000000;
 }
+.circle {
 
-.posAbsolute {
+    background: #ff8065; /* Цвет фона */
+    width: 150px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    height: 150px;
+    border-radius: 80px;
+    border: 2px solid #000; /* Параметры рамки */
+    opacity: 0.5;
     position: absolute;
-    background: #7eff68;
-    top: 100px;
-    left: 100px;
+    z-index: 1;
+    top: 170px; left: 20px;
+
 }
+.h1:hover { cursor: pointer}
+.image-bloc {
 
+    height: auto;
+    align-self: flex-center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: auto;
 
+ }
+.image-bloc2 {
 
+}
+.flexBox-conteiner-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:flax-start;
+    width: auto;
+    height: auto;
+    border: 2px solid #d4d2d6;
 
+    max-width: auto;
+}
+@media screen and (max-width: 320px) {
+
+    .flexBox-conteiner-1 {
+
+        box-shadow: 3px 3px 5px 5px black;
+    }
+
+    .image-bloc2 {
+        height: 200px;
+        align-self: flex-end;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: auto;
+    }
+}
