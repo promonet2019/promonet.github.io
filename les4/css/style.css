@@ -21,13 +21,20 @@ body {
     font: bold 100% sans-serif;
 }
 
-.text-li{
+.opisanie:hover{
+    color: #ffe; /* Цвет текста активного пункта */
+    background-color: #5488af; /* Цвет фона активного пункта */
+    cursor: pointer;
+    padding: 10px; /* Поля вокруг текста */
+
 }
 .karta1{
 
 }
 .karta2{
-    align-self: flex-center;
+
+
+
 }
 .zag-h2  {
 
@@ -36,6 +43,7 @@ body {
     border-bottom: 2px solid #000000;
     list-style-type: none;
     color: #000000;
+
 }
 .zag-h1 {
     font-size: 70px;
@@ -58,15 +66,15 @@ body {
     top: 170px; left: 20px;
 
 }
-.h1:hover { cursor: pointer}
+
 .image-bloc {
 
     height: auto;
-    align-self: flex-center;
+    align-self:flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: auto;
-
+padding:10px;
  }
 .image-bloc2 {
 
@@ -75,12 +83,11 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items:flax-start;
+    align-items:stretch;
     width: auto;
     height: auto;
     border: 2px solid #d4d2d6;
-
-    max-width: auto;
+    max-width:max-content;
 }
 @media screen and (max-width: 320px) {
 
